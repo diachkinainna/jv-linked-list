@@ -33,7 +33,7 @@ public class MyLinkedList<T> implements MyLinkedListInterface<T> {
             return;
         }
 
-        Node<T> newNode = new Node(null, value, null);
+        Node<T> newNode = new Node<>(null, value, null);
 
         if (index == 0) {
             first.prev = newNode;
